@@ -38,19 +38,3 @@ jobs:
           overwrite: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  
-  build-card:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Install dependencies
-      run: sudo apt install -y python3 python3-pil
-    - uses: actions/checkout@v3
-    - name: Build card
-      run: |
-        python3 roms/card/card_creator.py
-        mv card.png multirom-card.png
-    - name: Upload card
-      uses: actions/upload-artifact@v4
-      with:
-        name: multirom-card.png
-        path: multirom-card.png
