@@ -12,7 +12,7 @@ switch_up = Image.open(os.path.join(ROOT, 'switch_up.png'))
 switch_up.thumbnail((int(111/2), int(287/2)))
 
 # create new image
-card = Image.new(mode="RGBA", size=(3500, 2000), color=(255,255,255,00))
+card = Image.new(mode="RGBA", size=(3500, 2600), color=(255,255,255,00))
 
 # specify tags
 GAME = 1
@@ -39,6 +39,13 @@ data = [
     'Text 2000 v3',
     'Texteditor DE v2',
     'Word Processor v2',
+    'Brick Wall',
+    'Doolhof',
+    'Lazy Bug',
+    'Monkey Kong',
+    'Multipede',
+    'Space Fight',
+    'Tetris'
 ]
 
 # specify font
@@ -69,12 +76,12 @@ for i,label in enumerate(data):
             card.paste(switch_down, (xpos, ypos))
             xpos += 75
     
-    if i == 8:
+    if i == 11:
         ypos = 100
     else:
         ypos += 200
         
-    if i >= 8:
+    if i >= 11:
         xpos = 1800
     else:
         xpos = 100
