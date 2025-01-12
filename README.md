@@ -1,7 +1,7 @@
 # P2000T ROMPACKS
 
 This repository contains ROM-packs which can be used to build 
-[SLOT1 cartridges]().
+[SLOT1 cartridges](https://github.com/ifilot/p2000t-cartridges).
 
 ## List of ROMpacks
 
