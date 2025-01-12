@@ -30,7 +30,9 @@ jobs:
       - name: Update the nightly release
         uses: softprops/action-gh-release@v1
         with:
-          files: [MULTIROM-512KiB.BIN, card.png]
+          files: |
+            MULTIROM-512KiB.BIN
+            card.png
           tag_name: nightly
           release_name: Nightly Build
           overwrite: true
