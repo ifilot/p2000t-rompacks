@@ -1,6 +1,6 @@
 # P2000T ROMPACKS
 
-[![build](https://github.com/ifilot/p2000t-rompacks/actions/workflows/build.yml/badge.svg)](https://github.com/ifilot/p2000t-rompacks/actions/workflows/build.yml)
+[![build](https://github.com/ifilot/p2000t-rompacks/actions/workflows/nightly-build.yml/badge.svg)](https://github.com/ifilot/p2000t-rompacks/actions/workflows/nightly-build.yml)
 [![discord](https://img.shields.io/discord/1167925678868541451?logo=discord&logoColor=white)](https://discord.gg/YtzJTWYAxy)
 
 This repository contains ROM-packs which can be used to build 
