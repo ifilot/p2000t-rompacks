@@ -32,6 +32,7 @@ jobs:
         with:
           files: |
             MULTIROM-512KiB.BIN
+            MULTIROM-512KiB-RELEASE2.BIN
             MULTIROM-64KiB.BIN
             GAMES-128KiB.BIN
             card.png

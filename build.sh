@@ -12,10 +12,16 @@ mv software-main/cartridges ./roms
 rm -rf software-main
 
 # grab basic bootstrap
-wget https://gthub.com/ifilot/p2000t-sdcard/releases/latest/download/BASICBOOTSTRAP.BIN -O roms/BASICBOOTSTRAP.BIN
+wget https://github.com/ifilot/p2000t-sdcard/releases/download/latest-stable/BASICBOOTSTRAP.BIN -O roms/BASICBOOTSTRAP.BIN
 
 # grab flasher
-wget https://github.com/ifilot/p2000t-sdcard/releases/latest/download/FLASHER.BIN -O roms/FLASHER.BIN
+wget https://github.com/ifilot/p2000t-sdcard/releases/download/latest-stable/FLASHER.BIN -O roms/FLASHER.BIN
+
+# grab basic bootstrap - release 2
+wget https://github.com/ifilot/p2000t-sdcard/releases/download/release-2.x/BASICBOOTSTRAP.BIN -O roms/BASICBOOTSTRAP_RELEASE2.BIN
+
+# grab flasher - release 2
+wget https://github.com/ifilot/p2000t-sdcard/releases/download/release-2.x/FLASHER.BIN -O roms/FLASHER_RELEASE2.BIN
 
 # grab RAM tester
 wget https://github.com/ifilot/p2000t-ram-expansion-board/releases/latest/download/RAMTEST.BIN -O roms/RAMTEST.BIN

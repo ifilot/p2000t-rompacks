@@ -7,6 +7,7 @@ def main():
 
 def main():
     create_rom('rompacks/multirom512.pck', 'MULTIROM-512KiB.BIN', 512)
+    create_rom('rompacks/multirom512-release2.pck', 'MULTIROM-512KiB-RELEASE2.BIN', 512)
     create_rom('rompacks/multirom64.pck', 'MULTIROM-64KiB.BIN', 64)
     create_rom('rompacks/games128.pck', 'GAMES-128KiB.BIN', 128)
 
