@@ -41,6 +41,7 @@ data = [
     'Word Processor v2',
     'Brick Wall',
     'Doolhof',
+    'Fraxxon',
     'Lazy Bug',
     'Ghost Hunt',
     'Monkey Kong',

@@ -17,6 +17,7 @@ roms/TEXT2_DE.bin
 roms/WordProcessor 2.bin
 roms/games/Brick-Wall.bin
 roms/games/Doolhof.bin
+roms/games/Fraxxon (joystick).bin
 roms/games/Ghosthunt.bin
 roms/games/Lazy Bug.bin
 roms/games/Monkey Kong.bin
