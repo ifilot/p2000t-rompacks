@@ -9,7 +9,11 @@ def main():
     create_rom('rompacks/multirom512.pck', 'MULTIROM-512KiB.BIN', 512)
     create_rom('rompacks/multirom512-release2.pck', 'MULTIROM-512KiB-RELEASE2.BIN', 512)
     create_rom('rompacks/multirom64.pck', 'MULTIROM-64KiB.BIN', 64)
-    create_rom('rompacks/games128.pck', 'GAMES-128KiB.BIN', 128)
+
+    # produce two game packs, one with Space Fight and the other with Fraxxon
+    # the latter is meant for users who have a 16 KiB memory expansion
+    create_rom('rompacks/games128-01.pck', 'GAMES-128KiB.BIN', 128)
+    create_rom('rompacks/games128-02.pck', 'GAMES-128KiB-ALT.BIN', 128)
 
 def create_rom(tplfile, outfile, romsize):
     """

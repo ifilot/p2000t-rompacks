@@ -16,6 +16,13 @@ This repository contains ROM-packs which can be used to build
 * [32x16 KiB Multirom](https://github.com/ifilot/p2000t-rompacks/releases/download/nightly/MULTIROM-512KiB.BIN) + [companion card](https://github.com/ifilot/p2000t-rompacks/releases/download/nightly/card.png)
 * [4x16 KiB Multirom](https://github.com/ifilot/p2000t-rompacks/releases/download/nightly/MULTIROM-64KiB.BIN)
 * [GAMES Multirom](https://github.com/ifilot/p2000t-rompacks/releases/download/nightly/GAMES-128KiB.BIN)
+* [GAMES Multirom Alternative](https://github.com/ifilot/p2000t-rompacks/releases/download/nightly/GAMES-128KiB-ALT.BIN)
+
+> [!NOTE]
+> The *alternative GAMES MULTIROM* has a copy of the game Fraxxon rather than of
+> Space Fight. Note however that in order to run Fraxxon, one needs to have
+> **at least a 16 KiB memory expansion**. For a cheap memory expansion solution,
+> see [this repository](https://github.com/ifilot/p2000t-ram-expansion-board).
 
 ### Release 2.x
 
