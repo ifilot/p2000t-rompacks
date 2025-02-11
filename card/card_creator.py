@@ -20,35 +20,37 @@ EXROM = 2
 ROML = 4
 ROMH = 8
 
-# specify game data
-data = [
-    'BASIC NL v1.1',
-    'BASIC NL v1.1a2',
-    'BASIC EN v1.0',
-    'JWS Basic',
-    'SD-CARD Launcher',
-    'SD-CARD Flasher',
-    'RAM expansion test',
-    'Maintenance Utility',
-    'Forth',
-    'Assembler 5.9',
-    'Zemon v1.4',
-    'Flexbase v1.6',
-    'Familiegeheugen v4',
-    'Tekstverwerker v1',
-    'Text 2000 v3',
-    'Texteditor DE v2',
-    'Word Processor v2',
-    'Brick Wall',
-    'Doolhof',
-    'Fraxxon',
-    'Lazy Bug',
-    'Ghost Hunt',
-    'Monkey Kong',
-    'Multipede',
-    'Space Fight',
-    'Tetris'
-]
+titles = {
+    "roms/BASICNL1.1.bin" : "BASIC NL v1.1",
+    "roms/BASICNL1.1A2.bin" : "BASIC NL v1.1a2",
+    "roms/BASICNL1.0.bin" : "BASIC EN v1.0",
+    "roms/JWSBasic.bin" : "JWS Basic",
+    "roms/BASICBOOTSTRAP.BIN" : "SD-CARD Launcher",
+    "roms/FLASHER.BIN" : "SD-CARD Flasher",
+    "roms/RAMTEST.BIN" : "RAM test",
+    "roms/Maintenance 2.bin" : "Philips Maintenance",
+    "roms/Forth.bin" : "Forth",
+    "roms/assembler 5.9.bin" : "Assembler 5.9",
+    "roms/Zemon 1.4.bin" : "Zemon 1.4",
+    "roms/flexbase1_6.bin" : "Flexbase 1.6",
+    "roms/familiegeheugen 4.bin" : "Familiegeheugen v4",
+    "roms/tekst 1.bin" : "Tekst 1.0",
+    "roms/Text2000 3.bin" : "Tekst 2000 v3",
+    "roms/TEXT2_DE.bin" : "Text2 DE",
+    "roms/WordProcessor 2.bin" : "WordProcessor v2",
+    "roms/games/Brick-Wall.bin" : "Brick Wall",
+    "roms/games/Doolhof.bin" : "Doolhof",
+    "roms/games/Fraxxon (joystick).bin" : "Fraxxon",
+    "roms/games/Ghosthunt.bin" : "Ghosthunt",
+    "roms/games/Lazy Bug.bin" : "Lazy Bug",
+    "roms/games/Monkey Kong.bin" : "Monkey Kong",
+    "roms/games/Multipede.bin" : "Multipede",
+    "roms/games/Space Fight.bin" : "Space Fight",
+    "roms/games/Tetris.bin" : "Tetris",
+}
+
+with open(os.path.join(ROOT, '..', 'rompacks', 'multirom512.pck'), 'r') as f:
+    data = [titles[c.strip()] for c in f.readlines()]
 
 # specify font
 fnt = ImageFont.truetype(os.path.join(ROOT, 'OpenSans-ExtraBold.ttf'), 78)
@@ -63,7 +65,7 @@ xpos = 100
 cnt = 0
 for i,label in enumerate(data):
     switch = format(i, '#07b')
-    print(switch)
+    print("%30s %s" % (label, switch))
     d.text((xpos,ypos+15), label, font=fnt, fill=(0,0,0))
         
     # draw dipswitch box    
