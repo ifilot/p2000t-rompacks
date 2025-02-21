@@ -36,6 +36,7 @@ jobs:
             MULTIROM-64KiB.BIN
             GAMES-128KiB.BIN
             GAMES-128KiB-ALT.BIN
+            GAMES-256KiB.BIN
             card.png
           tag_name: nightly
           release_name: Nightly Build
