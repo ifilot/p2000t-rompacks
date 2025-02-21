@@ -17,6 +17,7 @@ This repository contains ROM-packs which can be used to build
 * [4x16 KiB Multirom](https://github.com/ifilot/p2000t-rompacks/releases/download/nightly/MULTIROM-64KiB.BIN)
 * [GAMES Multirom](https://github.com/ifilot/p2000t-rompacks/releases/download/nightly/GAMES-128KiB.BIN)
 * [GAMES Multirom Alternative](https://github.com/ifilot/p2000t-rompacks/releases/download/nightly/GAMES-128KiB-ALT.BIN)
+* [GAMES Multirom 256 KiB](https://github.com/ifilot/p2000t-rompacks/releases/download/nightly/GAMES-256KiB.BIN)
 
 > [!NOTE]
 > The *alternative GAMES MULTIROM* has a copy of the game Fraxxon rather than of
